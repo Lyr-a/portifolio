@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*#region General*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #24252A;
+}
+
+li, a, button{
+    font-family: "Monstserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16x;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+h1{
+    font-family: "Monstserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16x;
+    color:#c4cbe5;
+    text-decoration: none;
+    margin: 7px;
+    padding: 7px;
+}
+
+
+
+/*#endregion*/
+
+
+/*#region NavBar*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #00AAA9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;    
+}
+
+button:hover{
+
+    background-color: rgba(0,136,169,0.8);
+
+}
+
+/*#endregion*/
+
+/*#region Modal*/
+
+/*#region Botoes*/
+
+.modal__btns{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.whatsd{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #252A42;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;   
+
+}
+
+.modal__clsb{
+
+    height: 40px;
+    margin-right: 10px;
+    background-color: #252A42;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;   
+    
+
+}
+
+.modal__clsb:hover{
+
+    background-color: #41465f;
+    
+
+}
+
+.whatsd:hover{
+
+    background-color: #41465f;
+    
+
+}
+
+.whats{
+    width: 25px;
+    height: 25px;
+    
+}
+
+
+
+/*#endregion*/
+
+/*#region Caixa*/   
+
+.modal{
+    width: 500px;
+    height: 270px;
+    border-radius: 2%;
+    background-color: #424A75;
+
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     display: none;
+     animation: animate;
+     animation-duration: 800ms;
+}
+
+.modal__cls{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #656875;
+    float: right;
+    cursor: pointer;
+
+}
+
+.modt{
+
+    font-family: "Monstserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16x;
+    color:#c4cbe5;
+    text-decoration: none;
+    margin: 30px;
+    padding: 3px;
+
+}
+
+
+@keyframes animate{
+
+    from{opacity: 1;}
+    from{opacity: 0;}
+
+}
+
+/*#endregion*/
+
+/*#endregion*/

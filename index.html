@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>tete's portifolio</title> 
+        
+        <!--#region setup  -->
+
+        <meta charset="utf-8">
+        <meta name="description" content="tete index">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+
+        <!--#endregion-->
+    
+    </head>
+
+
+    <body>
+
+        <div id="root">
+
+            <header>
+                <a href="https://google.com" target=”_blank”><img href="index.html" class="logo" src="images/eu_sloa.png" alt="logo" width="35" height="35"></a>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="#">Sobre mim</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Habilidades</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="#"><button onClick="modal()">Contato</button></a>
+            </header>
+
+            <div class="modal">
+                <div class="modal__cls" onClick="fmodal()"></div>
+
+                <h1 class="modtitle">Contato:</h1>
+                <p class="modt">Gmail: estevaoturbay@gmail.com </p>
+                <p class="modt">Linkedin: www.linkedin.com/in/estevaoturbay</p>    
+                <p class="modt">Whatsapp: +55 (27) 98858-5411</p>
+
+                <div class="modal__btns">
+                    
+                <a href="https://api.whatsapp.com/send?phone=5527988585411&text=Ol%C3%A1!" target=”_blank”>
+                    <div class="whatsd" >
+                        <img src="images/whats.png" alt="whats" class="whats">
+                    </div>
+                </a>
+                    <div class="modal__clsb" onClick="fmodal()">
+                        <p class="modt">Fechar</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
