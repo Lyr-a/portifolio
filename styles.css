@@ -2,6 +2,12 @@
 
 /*#region General*/
 
+html{
+
+    scroll-behavior: smooth;
+
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,11 +18,11 @@ body{
     background-color: #24252A;
 }
 
-li,a, button{
+li,a, button, h2{
     font-family: "Monstserrat", sans-serif;
     font-weight: 500;
     font-size: 16x;
-    color: #edf0f1;
+    color: #c4cbe5;
     text-decoration: none;
 }
 
@@ -41,6 +47,18 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(61, 49, 92, 0.5));
+
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+
 }
 
 .logo{
@@ -107,6 +125,27 @@ button:hover{
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease 0s;   
+
+}
+
+#close__btn{
+
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    float: right;
+    cursor: pointer;
+
+}
+
+
+.modal__cls{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
 
 }
 
@@ -177,16 +216,6 @@ button:hover{
      animation-duration: 800ms;
 }
 
-.modal__cls{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    border-radius: 50%;
-    background-color: #656875;
-    float: right;
-    cursor: pointer;
-
-}
 
 
 .modtf{
@@ -214,13 +243,6 @@ button:hover{
 
 }
 
-
-@keyframes animate{
-
-    from{opacity: 1;}
-    from{opacity: 0;}
-
-}
 
 /*#endregion*/
 
@@ -260,6 +282,46 @@ button:hover{
 
 /*#endregion*/
 
+
+/*#region Sobre mim*/
+
+#container_um{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-items:center;
+    flex-direction: row;
+    height: 1000px;
+
+}
+#container_dois{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-items:center;
+    flex-direction: row;
+    height: 1000px;
+
+}
+#container_tres{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-items:center;
+    flex-direction: row;
+    height: 1000px;
+
+}
+
+#texto_contum{
+
+    float: right;
+
+}
+
 #perfil_pic{
 
     border-radius: 50%;
@@ -268,5 +330,28 @@ button:hover{
     position: absolute;
     top: 20%;
     left: 10%;
+
+}
+
+
+#pd_um{
+
+    font-size: 100px;
+
+}
+/*#endregion*/
+
+
+
+
+
+
+
+
+
+@keyframes animate{
+
+    from{opacity: 1;}
+    from{opacity: 0;}
 
 }
