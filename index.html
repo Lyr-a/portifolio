@@ -27,15 +27,15 @@
 
 
             <header>
-                <a href="https://google.com" target=”_blank”><img href="index.html" class="logo" src="images/eu_sloa.png" alt="logo" width="35" height="35"></a>
+                <a href="#sobremim"><img class="logo" src="images/perfil.jpg" alt="logo"></a>
                 <nav>
                     <ul class="nav__links">
-                        <li><a href="#container_um">Sobre mim</a></li>
+                        <li><a href="#sobremim">Sobre mim</a></li>
                         <li><a href="#container_dois">Projetos</a></li>
                         <li><a href="#container_tres">Habilidades</a></li>
                     </ul>
                 </nav>
-                <a class="cta" href="#"><button onClick="modal()">Contato</button></a>
+                <a class="cta"><button onClick="modal()">Contato</button></a>
             </header>
 
             <div class="modal">
@@ -80,13 +80,29 @@
 
 
 
-            <div id="container_um">
+            <div class="container" id="sobremim">
 
-                <img src="images/perfil.jpg" id="perfil_pic"alt="foto" height="600" width="600"> 
+                <img src="images/perfil.jpg" id="perfil_pic"alt="foto"> 
     
                 <div id="texto_contum">
     
-                    <h1 id="pd_um">Ola!<br/>Blá Blá Blá </h1>
+                    <h1 id="pd_um">Olá!<br/><span class="auto-type"></span> </h1>
+                    <h2 id="pd_dois">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. </h2>
+    
+                </div>        
+    
+    
+    
+    
+    
+    
+    
+            </div>
+            <div class="container"id="container_dois">
+    
+                <div id="texto_contum">
+    
+                    <h1>PROJETOS </h1>
                     <h2>Lero lero lero lero<br/>Lero lero lero lero<br/>Lero lero lero lero<br/></h2>
     
                 </div>        
@@ -98,31 +114,11 @@
     
     
             </div>
-            <div id="container_dois">
-    
-                <img src="images/perfil.jpg" id="perfil_pic"alt="foto" height="600" width="600"> 
+            <div class="container"id="container_tres">
     
                 <div id="texto_contum">
     
-                    <h1 id="pd_um">PROJETOS </h1>
-                    <h2>Lero lero lero lero<br/>Lero lero lero lero<br/>Lero lero lero lero<br/></h2>
-    
-                </div>        
-    
-    
-    
-    
-    
-    
-    
-            </div>
-            <div id="container_tres">
-    
-                <img src="images/perfil.jpg" id="perfil_pic"alt="foto" height="600" width="600"> 
-    
-                <div id="texto_contum">
-    
-                    <h1 id="pd_um">HABILIDADES </h1>
+                    <h1>HABILIDADES </h1>
                     <h2>Lero lero lero lero<br/>Lero lero lero lero<br/>Lero lero lero lero<br/></h2>
     
                 </div>        
@@ -141,7 +137,19 @@
 
 
         </div>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script src="script.js"></script>
+        <script>
+
+            var typed = new Typed(".auto-type", {
+                strings: ["meu nome é Estêvão."],
+                typeSpeed: 70,
+                backSpeed: 140,
+                loop: false
+            })
+
+        </script>
     </body>
 
 </html>

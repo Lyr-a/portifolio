@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    background-color: #24252A;
+    background-image: linear-gradient(to bottom right, rgba(29, 29, 32), rgba(47, 47, 58));
 }
 
 li,a, button, h2{
@@ -36,7 +36,28 @@ h1{
     padding: 7px;
 }
 
+/*#region Scroll*/
 
+    ::-webkit-scrollbar {
+        width: 10px;;
+    }
+
+    
+    ::-webkit-scrollbar-track {
+        background-image: linear-gradient(to top left, rgba(29, 29, 32), rgba(47, 47, 58));
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: rgb(50, 50, 70); 
+        border-radius: 10px;
+        transition: 0.3s ease-in-out 0s;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+
+/*#endregion*/
 
 /*#endregion*/
 
@@ -47,9 +68,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    height: 10vh;
 
     /*background-color: rgba(0, 0, 0, 0.5);*/
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(61, 49, 92, 0.5));
+    background-image: linear-gradient(to right, rgba(46, 46, 53, 0.5), rgba(51, 51, 71, 0.5));
 
     z-index: 10000;
     position: fixed;
@@ -61,7 +83,12 @@ header{
 
 }
 
+
+
 .logo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -193,6 +220,8 @@ button:hover{
 
 .modal{
     
+    z-index: 1;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,76 +311,72 @@ button:hover{
 
 /*#endregion*/
 
+.container{
 
-/*#region Sobre mim*/
-
-#container_um{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    justify-items:center;
-    flex-direction: row;
-    height: 1000px;
+    height: 100vh;
+    width: 100vw;
+    max-width:100%; 
 
 }
-#container_dois{
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    justify-items:center;
-    flex-direction: row;
-    height: 1000px;
+#sobremim{
 
-}
-#container_tres{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    justify-items:center;
-    flex-direction: row;
-    height: 1000px;
+    display: flex;
+    align-items: center;
 
 }
 
 #texto_contum{
 
+    width: 100%;
     float: right;
+    margin-left: 5vh;
+   /* background-color: blueviolet;*/
 
 }
 
 #perfil_pic{
 
+    height: 70vh;
     border-radius: 50%;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); 
-    z-index: -5;
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    margin-left: 5vw;
+    float: left;
+
 
 }
-
 
 #pd_um{
 
-    font-size: 100px;
+    font-family: "Monstserrat", sans-serif;
+    font-weight: 500;
+    font-size: 9vh;
+    color:#c4cbe5;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 3vh;
+    /*background-color: coral;*/
+    width: fit-content;
+}
+
+#pd_dois{
+
+    line-height: 30px;
+    margin-left: 4vw;
+    width: 37vw;
+   /* background-color: aliceblue;*/
+    text-align: justify;
+    text-align-last: left;
+    animation: animate;
+    animation-duration: 5s;
 
 }
-/*#endregion*/
-
-
-
-
-
-
-
 
 
 @keyframes animate{
 
     from{opacity: 1;}
     from{opacity: 0;}
+
 
 }
