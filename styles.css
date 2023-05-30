@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    background-image: linear-gradient(to bottom right, rgba(29, 29, 32), rgba(47, 47, 58));
+    background-image: linear-gradient(to bottom right, rgb(30, 30, 32), rgb(55, 55, 78));
 }
 
 li,a, button, h2{
@@ -313,11 +313,14 @@ button:hover{
 
 .container{
 
+
     height: 100vh;
     width: 100vw;
     max-width:100%; 
 
 }
+
+/*#region Sobre mim*/
 
 #sobremim{
 
@@ -328,19 +331,33 @@ button:hover{
 
 #texto_contum{
 
-    width: 100%;
-    float: right;
-    margin-left: 5vh;
-   /* background-color: blueviolet;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50vw;
+    padding-top: 10vh;
+    height: 100vh;
+
+}
+
+#pp_div{
+
+    display: flex;
+    padding-top: 10vh;
+    height: 100vh;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
 
 }
 
 #perfil_pic{
 
-    height: 70vh;
+    width: inherit;
+    max-width: 35vw;
     border-radius: 50%;
-    margin-left: 5vw;
-    float: left;
+    align-self: center;
 
 
 }
@@ -349,22 +366,20 @@ button:hover{
 
     font-family: "Monstserrat", sans-serif;
     font-weight: 500;
-    font-size: 9vh;
+    font-size: 8vh;
     color:#c4cbe5;
     text-decoration: none;
     margin: 0px;
     padding: 0px;
-    padding-bottom: 3vh;
-    /*background-color: coral;*/
+    padding-bottom: 2.5vh;
     width: fit-content;
 }
 
 #pd_dois{
 
     line-height: 30px;
-    margin-left: 4vw;
-    width: 37vw;
-   /* background-color: aliceblue;*/
+    margin-left: 2vw;
+    width: 33vw;
     text-align: justify;
     text-align-last: left;
     animation: animate;
@@ -372,6 +387,52 @@ button:hover{
 
 }
 
+/*#endregion*/
+
+.item_proj{
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 10vh;
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(55, 55, 78));
+    
+
+}
+
+#proj_um{
+
+    height: fit-content;
+    max-width: 100%;
+    width: 100%;
+    font-size: 10vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+#proj_list{
+
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+#lista{
+
+    width: 75vw;
+    display: flex;
+    background-color: #c4cbe5;
+}
+
+.box {
+    width:20vw;
+    height:20vh;
+    background-color:#32bacf;
+  }
+  
 
 @keyframes animate{
 

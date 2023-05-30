@@ -31,7 +31,7 @@
                 <nav>
                     <ul class="nav__links">
                         <li><a href="#sobremim">Sobre mim</a></li>
-                        <li><a href="#container_dois">Projetos</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#container_tres">Habilidades</a></li>
                     </ul>
                 </nav>
@@ -82,8 +82,11 @@
 
             <div class="container" id="sobremim">
 
-                <img src="images/perfil.jpg" id="perfil_pic"alt="foto"> 
-    
+                <div id="pp_div">
+
+                    <img src="images/perfil.jpg" id="perfil_pic"alt="foto"> 
+                
+                </div>
                 <div id="texto_contum">
     
                     <h1 id="pd_um">Olá!<br/><span class="auto-type"></span> </h1>
@@ -98,31 +101,33 @@
     
     
             </div>
-            <div class="container"id="container_dois">
-    
-                <div id="texto_contum">
-    
-                    <h1>PROJETOS </h1>
-                    <h2>Lero lero lero lero<br/>Lero lero lero lero<br/>Lero lero lero lero<br/></h2>
-    
-                </div>        
-    
-    
-    
-    
-    
-    
+            <div class="container"id="projetos">
+                <div class="item_proj">
+
+                    <h1 id="proj_um">Lorem ipsum</h1>
+                    
+                    <div id="proj_list">
+                        <div id="lista">
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
     
             </div>
             <div class="container"id="container_tres">
     
-                <div id="texto_contum">
-    
-                    <h1>HABILIDADES </h1>
-                    <h2>Lero lero lero lero<br/>Lero lero lero lero<br/>Lero lero lero lero<br/></h2>
-    
-                </div>        
-    
+                <div class="item_proj">
+                    <div id="texto_contum">
+        
+                        <h1>HABILIDADES </h1>
+                        <h2>Lero lero lero lero<br/>Lero lero lero lero<br/>Lero lero lero lero<br/></h2>
+        
+                    </div>        
+                </div>
     
     
     
@@ -138,18 +143,17 @@
 
         </div>
 
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script src="script.js"></script>
+<!--
+        <script type="module" src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script>
-
             var typed = new Typed(".auto-type", {
                 strings: ["meu nome é Estêvão."],
-                typeSpeed: 70,
+                typeSpeed: 100,
                 backSpeed: 140,
                 loop: false
             })
-
-        </script>
+        </script>-->
     </body>
 
 </html>
