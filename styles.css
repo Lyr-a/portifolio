@@ -313,8 +313,7 @@ button:hover{
 
 .container{
 
-
-    height: 100vh;
+    position: relative;
     width: 100vw;
     max-width:100%; 
 
@@ -389,13 +388,16 @@ button:hover{
 
 /*#endregion*/
 
+/*#region Projetos*/
+
 .item_proj{
 
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height:fit-content;
+    min-height: 100vh;
     padding-top: 10vh;
-    background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(55, 55, 78));
+   /* background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(55, 55, 78));*/
     
 
 }
@@ -416,23 +418,45 @@ button:hover{
     width: 100%;
     margin-top: 10vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
 }
 
 #lista{
 
-    width: 75vw;
+    width: 75vw;  
     display: flex;
-    background-color: #c4cbe5;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .box {
     width:20vw;
-    height:20vh;
-    background-color:#32bacf;
+    height:15vw;
+    margin: 2vw;
+    border-radius: 3%;
+    background-color: rgb(196, 203, 229, 0.5);
+    cursor: pointer;
+     filter:grayscale(75%);
+     transition: all 0.3s ease 0s;
   }
-  
+
+.box:hover{
+
+    filter: grayscale(0%);
+
+}
+
+/*#endregion*/
+
+#habilidades{
+
+    position: relative;
+
+}
 
 @keyframes animate{
 
