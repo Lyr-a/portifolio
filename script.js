@@ -28,6 +28,46 @@ for (var i = 0; i < 3; i++) {
 
 //#endregion
 
+//#region Habilidades
+
+const texto = document.getElementById('txt_desc');
+
+const ableton = document.getElementById('ableton');
+const js = document.getElementById('js');
+const python = document.getElementById('python');
+const java = document.getElementById('java');
+const html = document.getElementById('html');
+const css = document.getElementById('css');
+const blender = document.getElementById('blender');
+const photoshop = document.getElementById('photoshop');
+
+ableton.addEventListener('mouseover', function handleMouseOver() {
+    texto.innerHTML = 'ABLETON';
+});
+js.addEventListener('mouseover', function handleMouseOver() {
+    texto.innerHTML = 'js';
+});
+python.addEventListener('mouseover', function handleMouseOver() {
+    texto.innerHTML = 'pypypyppyy';
+});
+java.addEventListener('mouseover', function handleMouseOver() {
+    texto.innerHTML = 'java/???';
+});
+html.addEventListener('mouseover', function handleMouseOver() {
+    texto.innerHTML = 'AGA TE EMI ELI';
+});
+css.addEventListener('mouseover', function handleMouseOver() {
+    texto.innerHTML = 'cê esssss esssss';
+});
+blender.addEventListener('mouseover', function handleMouseOver() {
+    texto.innerHTML = 'blend blend';
+});
+photoshop.addEventListener('mouseover', function handleMouseOver() {
+    texto.innerHTML = 'photoshop!!';
+});
+
+//#endregion
+
 //#region Funcões
 
 function vermais(){

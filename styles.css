@@ -311,11 +311,34 @@ button:hover{
 
 /*#endregion*/
 
+/*#region Body*/
+
 .container{
 
     position: relative;
     width: 100vw;
     max-width:100%; 
+
+}
+
+.item_proj{
+
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    min-height: 100vh;
+    padding-top: 10vh;
+
+}
+
+.proj_um{
+
+    height: fit-content;
+    max-width: 100%;
+    font-size: 10vh;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    padding: 0;
 
 }
 
@@ -390,28 +413,6 @@ button:hover{
 
 /*#region Projetos*/
 
-.item_proj{
-
-    display: flex;
-    flex-direction: column;
-    height:fit-content;
-    min-height: 100vh;
-    padding-top: 10vh;
-   /* background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(55, 55, 78));*/
-    
-
-}
-
-#proj_um{
-
-    height: fit-content;
-    max-width: 100%;
-    width: 100%;
-    font-size: 10vh;
-    margin: 0;
-    padding: 0;
-
-}
 
 #proj_list{
 
@@ -452,11 +453,69 @@ button:hover{
 
 /*#endregion*/
 
+/*#region Habilidades*/
+
 #habilidades{
 
     position: relative;
 
 }
+    
+.img_hab{
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#hab_desc{
+
+    float: right;
+    width: 100%;
+
+
+}
+
+#hab_disp{
+
+    display: flex;
+
+}
+
+#lis_hab{
+
+    margin-top: 3vh;
+    margin-left: 6vw;
+    min-width:90vh;
+    width: 90vh;
+    height: 45vh;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+
+}
+/*1 20 1 1 20 1 1 20 1 1 20 1*/
+.box_hab{
+
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+     
+     height: 20vh;
+     width: 20vh;
+     border-radius: 23%;
+     background-color: aliceblue;
+
+}
+
+
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region animation*/
 
 @keyframes animate{
 
@@ -465,3 +524,5 @@ button:hover{
 
 
 }
+
+/*#endregion*/
